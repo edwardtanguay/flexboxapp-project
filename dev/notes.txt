@@ -1,2 +1,5 @@
-- .. make three state variables and show that they can change data on site
+- ,, make three state variables and show that they can change data on site
+	- .. create radio buttons and dropdowns
 
+
+- refactor CSS: legend, block element, etc.
