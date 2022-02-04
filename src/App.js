@@ -10,11 +10,15 @@ function App() {
 		<div className="App">
 			<h1>Flexbox Generator</h1>
 			<fieldset className="flexDirection">
+
 				<legend>Flex Direction</legend>
-				<input id="row" type="radio" name="flexDirection" checked={flexDirection === "row"} onChange={() => setFlexDirection('row')} />
+
+				<input id="row" type="radio" name="flexDirection" value="row" checked={flexDirection === "row"} onChange={(e) => setFlexDirection(e.target.value)} />
 				<label htmlFor="row">row</label>
-				<input id="column" type="radio" name="flexDirection" checked={flexDirection === "column"} onChange={() => setFlexDirection('column')} />
+
+				<input id="column" type="radio" name="flexDirection" value="column" checked={flexDirection === "column"} onChange={(e) => setFlexDirection(e.target.value)} />
 				<label htmlFor="column">column</label>
+
 			</fieldset>
 		</div>
 	);
